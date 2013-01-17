@@ -24,17 +24,17 @@ Require {
 Define = "BaseDecor" {
 	Height = "4"
 	Pad = "2 4 4 2"
-	Focused = "Solid #000000"
-	Unfocused = "Solid #909090"
+	Focused = "SOLID #000000"
+	Unfocused = "SOLID #909090"
 	Tab {
-		Focused = "Solid #909090"
-		FocusedSelected = "Solid #000000"
-		Unfocused = "Solid #d0d0d0"
-		UnfocusedSelected = "Solid #909090"
+		Focused = "SOLID #909090"
+		FocusedSelected = "SOLID #000000"
+		Unfocused = "SOLID #d0d0d0"
+		UnfocusedSelected = "SOLID #909090"
 	}
 	Separator {
-		Focused = "Solid #d0d0d0 2x4"
-		Unfocused = "Solid #ffffff 2x4"
+		Focused = "SOLID #d0d0d0 2x4"
+		Unfocused = "SOLID #ffffff 2x4"
 	}
 	Font {
 		Focused = "$FONT"
@@ -47,32 +47,32 @@ Define = "BaseDecor" {
 	}
 	Buttons {
 		Right = "Close" {
-			Focused = "Solid #909090 8x4"
-			Unfocused = "Solid #d0d0d0 8x4"
-			Pressed = "Solid #ffffff 8x4"
-			Hover = "Solid #d0d0d0 8x4"
+			Focused = "SOLID #909090 8x4"
+			Unfocused = "SOLID #d0d0d0 8x4"
+			Pressed = "SOLID #ffffff 8x4"
+			Hover = "SOLID #d0d0d0 8x4"
 			Button = "1" { Actions = "Close" }
 			Button = "3" { Actions = "Kill" }
 		}
 		Right = "Maximize" {
-			Focused = "Solid #909090 8x4"
-			Unfocused = "Solid #d0d0d0 8x4"
-			Pressed = "Solid #ffffff 8x4"
-			Hover = "Solid #d0d0d0 8x4"
+			Focused = "SOLID #909090 8x4"
+			Unfocused = "SOLID #d0d0d0 8x4"
+			Pressed = "SOLID #ffffff 8x4"
+			Hover = "SOLID #d0d0d0 8x4"
 			Button = "1" { Actions = "Toggle Maximized" }
 		}
 		Right = "Iconify" {
-			Focused = "Solid #909090 8x4"
-			Unfocused = "Solid #d0d0d0 8x4"
-			Pressed = "Solid #ffffff 8x4"
-			Hover = "Solid #d0d0d0 8x4"
+			Focused = "SOLID #909090 8x4"
+			Unfocused = "SOLID #d0d0d0 8x4"
+			Pressed = "SOLID #ffffff 8x4"
+			Hover = "SOLID #d0d0d0 8x4"
 			Button = "1" { Actions = "Set Iconified" }
 		}
 		Left = "Shade" {
-			Focused = "Solid #909090 8x4"
-			Unfocused = "Solid #d0d0d0 8x4"
-			Pressed = "Solid #ffffff 8x4"
-			Hover = "Solid #d0d0d0 8x4"
+			Focused = "SOLID #909090 8x4"
+			Unfocused = "SOLID #d0d0d0 8x4"
+			Pressed = "SOLID #ffffff 8x4"
+			Hover = "SOLID #d0d0d0 8x4"
 			Button = "1" { Actions = "Toggle Shaded" }
 		}
 	}
@@ -81,24 +81,24 @@ Define = "BaseDecor" {
 Define = "LineBorder" {
 	Border {
 		Focused {
-			TopLeft = "Solid #000000 2x2"
-			Top = "Solid #000000 2x2"
-			TopRight = "Solid #000000 2x2"
-			Left = "Solid #000000 2x2"
-			Right = "Solid #000000 2x2"
-			BottomLeft = "Solid #000000 2x2"
-			Bottom = "Solid #000000 2x2"
-			BottomRight = "Solid #000000 2x2"
+			TopLeft = "SOLID #000000 2x2"
+			Top = "SOLID #000000 2x2"
+			TopRight = "SOLID #000000 2x2"
+			Left = "SOLID #000000 2x2"
+			Right = "SOLID #000000 2x2"
+			BottomLeft = "SOLID #000000 2x2"
+			Bottom = "SOLID #000000 2x2"
+			BottomRight = "SOLID #000000 2x2"
 		}
 		Unfocused {
-			TopLeft = "Solid #909090 2x2"
-			Top = "Solid #909090 2x2"
-			TopRight = "Solid #909090 2x2"
-			Left = "Solid #909090 2x2"
-			Right = "Solid #909090 2x2"
-			BottomLeft = "Solid #909090 2x2"
-			Bottom = "Solid #909090 2x2"
-			BottomRight = "Solid #909090 2x2"
+			TopLeft = "SOLID #909090 2x2"
+			Top = "SOLID #909090 2x2"
+			TopRight = "SOLID #909090 2x2"
+			Left = "SOLID #909090 2x2"
+			Right = "SOLID #909090 2x2"
+			BottomLeft = "SOLID #909090 2x2"
+			Bottom = "SOLID #909090 2x2"
+			BottomRight = "SOLID #909090 2x2"
 		}
 	}
 }
@@ -106,24 +106,24 @@ Define = "LineBorder" {
 Define = "TermBorder" {
 	Border {
 		Focused {
-			TopLeft = "Empty"
-			Top = "Empty"
-			TopRight = "Empty"
-			Left = "Solid #000000 2x2"
-			Right = "Solid #000000 2x2"
-			BottomLeft = "Solid #000000 2x2"
-			Bottom = "Solid #000000 2x2"
-			BottomRight = "Solid #000000 2x2"
+			TopLeft = "EMPTY"
+			Top = "EMPTY"
+			TopRight = "EMPTY"
+			Left = "SOLID #000000 2x2"
+			Right = "SOLID #000000 2x2"
+			BottomLeft = "SOLID #000000 2x2"
+			Bottom = "SOLID #000000 2x2"
+			BottomRight = "SOLID #000000 2x2"
 		}
 		Unfocused {
-			TopLeft = "Empty"
-			Top = "Empty"
-			TopRight = "Empty"
-			Left = "Solid #909090 2x2"
-			Right = "Solid #909090 2x2"
-			BottomLeft = "Solid #909090 2x2"
-			Bottom = "Solid #909090 2x2"
-			BottomRight = "Solid #909090 2x2"
+			TopLeft = "EMPTY"
+			Top = "EMPTY"
+			TopRight = "EMPTY"
+			Left = "SOLID #909090 2x2"
+			Right = "SOLID #909090 2x2"
+			BottomLeft = "SOLID #909090 2x2"
+			Bottom = "SOLID #909090 2x2"
+			BottomRight = "SOLID #909090 2x2"
 		}
 	}
 }
@@ -131,24 +131,24 @@ Define = "TermBorder" {
 Define = "FixedBorder" {
 	Border {
 		Focused {
-			TopLeft = "Solid #000000 1x1"
-			Top = "Solid #000000 1x1"
-			TopRight = "Solid #000000 1x1"
-			Left = "Solid #000000 1x1"
-			Right = "Solid #000000 1x1"
-			BottomLeft = "Solid #000000 1x1"
-			Bottom = "Solid #000000 1x1"
-			BottomRight = "Solid #000000 1x1"
+			TopLeft = "SOLID #000000 1x1"
+			Top = "SOLID #000000 1x1"
+			TopRight = "SOLID #000000 1x1"
+			Left = "SOLID #000000 1x1"
+			Right = "SOLID #000000 1x1"
+			BottomLeft = "SOLID #000000 1x1"
+			Bottom = "SOLID #000000 1x1"
+			BottomRight = "SOLID #000000 1x1"
 		}
 		Unfocused {
-			TopLeft = "Solid #000000 1x1"
-			Top = "Solid #000000 1x1"
-			TopRight = "Solid #000000 1x1"
-			Left = "Solid #000000 1x1"
-			Right = "Solid #000000 1x1"
-			BottomLeft = "Solid #000000 1x1"
-			Bottom = "Solid #000000 1x1"
-			BottomRight = "Solid #000000 1x1"
+			TopLeft = "SOLID #000000 1x1"
+			Top = "SOLID #000000 1x1"
+			TopRight = "SOLID #000000 1x1"
+			Left = "SOLID #000000 1x1"
+			Right = "SOLID #000000 1x1"
+			BottomLeft = "SOLID #000000 1x1"
+			Bottom = "SOLID #000000 1x1"
+			BottomRight = "SOLID #000000 1x1"
 		}
 	}
 }
@@ -191,52 +191,52 @@ Menu {
 	Pad = "3 2 7 8"
 	Focused {
 		Font = "$FONT"
-		Background = "Solid #ffffff"
-		Item = "Empty"
+		Background = "SOLID #ffffff"
+		Item = "EMPTY"
 		Text = "#000000"
-		Separator = "Image menuline.png"
-		Arrow = "Solid #000000 2x2"
+		Separator = "IMAGE menuline.png"
+		Arrow = "SOLID #000000 2x2"
 	}
 	Unfocused {
 		Font = "$FONT"
-		Background = "Solid #ffffff"
-		Item = "Empty"
+		Background = "SOLID #ffffff"
+		Item = "EMPTY"
 		Text = "#676767 #808080"
-		Separator = "Image menuline.png"
-		Arrow = "Solid #676767 2x2"
+		Separator = "IMAGE menuline.png"
+		Arrow = "SOLID #676767 2x2"
 	}
 	Selected {
 		Font = "$FONT"
 		Background = "Solid #c0c0c0"
-		Item = "Empty"
+		Item = "EMPTY"
 		Text = "#000000 #808080"
-		Arrow = "Solid #000000 3x3"
+		Arrow = "SOLID #000000 3x3"
 	}
 }
 
 Harbour {
-	Texture = "Solid #292929""
+	Texture = "SOLID #292929""
 }
 
 CmdDialog {
 	Font = "$FONT"
-	Texture = "Solid #ffffff"
+	Texture = "SOLID #ffffff"
 	Text = "#000000"
 	Pad = "5 5 2 5"
 }
 
 Status {
 	Font = "$FONT"
-	Texture = "Solid #ffffff"
+	Texture = "SOLID #ffffff"
 	Text = "#000000"
 	Pad = "0 1 4 4"
 }
 
 WorkspaceIndicator {
 	Font = "$FONT"
-	Background = "Solid #292929"
-	Workspace = "Solid #363636"
-	WorkspaceActive = "Solid #424242"
+	Background = "SOLID #292929"
+	Workspace = "SOLID #363636"
+	WorkspaceActive = "SOLID #424242"
 	Text = "#868179"
 	EdgePadding = "5"
 	WorkspacePadding = "2"
