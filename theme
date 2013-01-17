@@ -1,0 +1,243 @@
+/*
+ * Pekwm theme for minimalists -- Null
+ * Copyright (c) 2010 Akinori Furukoshi <moonlightakkiy@yahoo.ca>
+ *
+ * Permission to use, copy, modify, and distribute this software for any
+ * purpose with or without fee is hereby granted, provided that the above
+ * copyright notice and this permission notice appear in all copies.
+ *
+ * THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL WARRANTIES
+ * WITH REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF
+ * MERCHANTABILITY AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR
+ * ANY SPECIAL, DIRECT, INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES
+ * WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN
+ * ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF
+ * OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
+ */
+
+$FONT = "XFT#Bitstream Vera Sans:size=10"
+
+Require {
+	Templates = "True"
+}
+
+Define = "BaseDecor" {
+	Height = "4"
+	Pad = "2 4 4 2"
+	Focused = "Solid #000000"
+	Unfocused = "Solid #909090"
+	Tab {
+		Focused = "Solid #909090"
+		FocusedSelected = "Solid #000000"
+		Unfocused = "Solid #d0d0d0"
+		UnfocusedSelected = "Solid #909090"
+	}
+	Separator {
+		Focused = "Solid #d0d0d0 2x4"
+		Unfocused = "Solid #ffffff 2x4"
+	}
+	Font {
+		Focused = "$FONT"
+	}
+	FontColor {
+		Focused = "#909090"
+		FocusedSelected = "#000000"
+		Unfocused = "#d0d0d0"
+		UnfocusedSelected = "#909090"
+	}
+	Buttons {
+		Right = "Close" {
+			Focused = "Solid #909090 8x4"
+			Unfocused = "Solid #d0d0d0 8x4"
+			Pressed = "Solid #ffffff 8x4"
+			Hover = "Solid #d0d0d0 8x4"
+			Button = "1" { Actions = "Close" }
+			Button = "3" { Actions = "Kill" }
+		}
+		Right = "Maximize" {
+			Focused = "Solid #909090 8x4"
+			Unfocused = "Solid #d0d0d0 8x4"
+			Pressed = "Solid #ffffff 8x4"
+			Hover = "Solid #d0d0d0 8x4"
+			Button = "1" { Actions = "Toggle Maximized" }
+		}
+		Right = "Iconify" {
+			Focused = "Solid #909090 8x4"
+			Unfocused = "Solid #d0d0d0 8x4"
+			Pressed = "Solid #ffffff 8x4"
+			Hover = "Solid #d0d0d0 8x4"
+			Button = "1" { Actions = "Set Iconified" }
+		}
+		Left = "Shade" {
+			Focused = "Solid #909090 8x4"
+			Unfocused = "Solid #d0d0d0 8x4"
+			Pressed = "Solid #ffffff 8x4"
+			Hover = "Solid #d0d0d0 8x4"
+			Button = "1" { Actions = "Toggle Shaded" }
+		}
+	}
+}
+
+Define = "LineBorder" {
+	Border {
+		Focused {
+			TopLeft = "Solid #000000 2x2"
+			Top = "Solid #000000 2x2"
+			TopRight = "Solid #000000 2x2"
+			Left = "Solid #000000 2x2"
+			Right = "Solid #000000 2x2"
+			BottomLeft = "Solid #000000 2x2"
+			Bottom = "Solid #000000 2x2"
+			BottomRight = "Solid #000000 2x2"
+		}
+		Unfocused {
+			TopLeft = "Solid #909090 2x2"
+			Top = "Solid #909090 2x2"
+			TopRight = "Solid #909090 2x2"
+			Left = "Solid #909090 2x2"
+			Right = "Solid #909090 2x2"
+			BottomLeft = "Solid #909090 2x2"
+			Bottom = "Solid #909090 2x2"
+			BottomRight = "Solid #909090 2x2"
+		}
+	}
+}
+
+Define = "TermBorder" {
+	Border {
+		Focused {
+			TopLeft = "Empty"
+			Top = "Empty"
+			TopRight = "Empty"
+			Left = "Solid #000000 2x2"
+			Right = "Solid #000000 2x2"
+			BottomLeft = "Solid #000000 2x2"
+			Bottom = "Solid #000000 2x2"
+			BottomRight = "Solid #000000 2x2"
+		}
+		Unfocused {
+			TopLeft = "Empty"
+			Top = "Empty"
+			TopRight = "Empty"
+			Left = "Solid #909090 2x2"
+			Right = "Solid #909090 2x2"
+			BottomLeft = "Solid #909090 2x2"
+			Bottom = "Solid #909090 2x2"
+			BottomRight = "Solid #909090 2x2"
+		}
+	}
+}
+
+Define = "FixedBorder" {
+	Border {
+		Focused {
+			TopLeft = "Solid #000000 1x1"
+			Top = "Solid #000000 1x1"
+			TopRight = "Solid #000000 1x1"
+			Left = "Solid #000000 1x1"
+			Right = "Solid #000000 1x1"
+			BottomLeft = "Solid #000000 1x1"
+			Bottom = "Solid #000000 1x1"
+			BottomRight = "Solid #000000 1x1"
+		}
+		Unfocused {
+			TopLeft = "Solid #000000 1x1"
+			Top = "Solid #000000 1x1"
+			TopRight = "Solid #000000 1x1"
+			Left = "Solid #000000 1x1"
+			Right = "Solid #000000 1x1"
+			BottomLeft = "Solid #000000 1x1"
+			Bottom = "Solid #000000 1x1"
+			BottomRight = "Solid #000000 1x1"
+		}
+	}
+}
+
+PDecor {
+	Decor = "DEFAULT" {
+		Title {
+			@LineBorder
+		}
+	}
+	Decor = "MENU" {
+		Title {
+			@FixedBorder
+		}
+	}
+	Decor = "WORKSPACEINDICATOR" {
+		Title {
+			@FixedBorder
+		}
+	}
+	Decor = "INPUTDIALOG" {
+		Title {
+			@FixedBorder
+		}
+	}
+	Decor = "STATUSWINDOW" {
+		Title {
+			@FixedBorder
+		}
+	}
+	Decor = "TERM" {
+		Title {
+			@BaseDecor
+			@TermBorder
+		}
+	}
+}
+
+Menu {
+	Pad = "3 2 7 8"
+	Focused {
+		Font = "$FONT"
+		Background = "Solid #ffffff"
+		Item = "Empty"
+		Text = "#000000"
+		Separator = "Image menuline.png"
+		Arrow = "Solid #000000 2x2"
+	}
+	Unfocused {
+		Font = "$FONT"
+		Background = "Solid #ffffff"
+		Item = "Empty"
+		Text = "#676767 #808080"
+		Separator = "Image menuline.png"
+		Arrow = "Solid #676767 2x2"
+	}
+	Selected {
+		Font = "$FONT"
+		Background = "Solid #c0c0c0"
+		Item = "Empty"
+		Text = "#000000 #808080"
+		Arrow = "Solid #000000 3x3"
+	}
+}
+
+Harbour {
+	Texture = "Solid #292929""
+}
+
+CmdDialog {
+	Font = "$FONT"
+	Texture = "Solid #ffffff"
+	Text = "#000000"
+	Pad = "5 5 2 5"
+}
+
+Status {
+	Font = "$FONT"
+	Texture = "Solid #ffffff"
+	Text = "#000000"
+	Pad = "0 1 4 4"
+}
+
+WorkspaceIndicator {
+	Font = "$FONT"
+	Background = "Solid #292929"
+	Workspace = "Solid #363636"
+	WorkspaceActive = "Solid #424242"
+	Text = "#868179"
+	EdgePadding = "5"
+	WorkspacePadding = "2"
+}
