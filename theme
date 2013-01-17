@@ -21,7 +21,31 @@ Require {
 	Templates = "True"
 }
 
-Define = "BaseDecor" {
+Define = "NoDecor" {
+	Focused = "EMPTY"
+	Unfocused = "EMPTY"
+	Tab {
+		Focused = "EMPTY"
+		FocusedSelected = "EMPTY"
+		Unfocused = "EMPTY"
+		UnfocusedSelected = "EMPTY"
+	}
+	Separator {
+		Focused = "Solid #d0d0d0 2x4"
+		Unfocused = "Solid #ffffff 2x4"
+	}
+	Font {
+		Focused = "$FONT"
+	}
+	FontColor {
+		Focused = "EMPTY"
+		FocusedSelected = "EMPTY"
+		Unfocused = "EMPTY"
+		UnfocusedSelected = "EMPTY"
+	}
+}
+
+Define = "TermDecor" {
 	Height = "4"
 	Pad = "2 4 4 2"
 	Focused = "SOLID #000000"
@@ -156,32 +180,37 @@ Define = "FixedBorder" {
 PDecor {
 	Decor = "DEFAULT" {
 		Title {
+			@NoDecor
 			@LineBorder
 		}
 	}
 	Decor = "MENU" {
 		Title {
+			@NoDecor
 			@FixedBorder
 		}
 	}
 	Decor = "WORKSPACEINDICATOR" {
 		Title {
+			@NoDecor
 			@FixedBorder
 		}
 	}
 	Decor = "INPUTDIALOG" {
 		Title {
+			@NoDecor
 			@FixedBorder
 		}
 	}
 	Decor = "STATUSWINDOW" {
 		Title {
+			@NoDecor
 			@FixedBorder
 		}
 	}
 	Decor = "TERM" {
 		Title {
-			@BaseDecor
+			@TermDecor
 			@TermBorder
 		}
 	}
